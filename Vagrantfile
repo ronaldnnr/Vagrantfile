@@ -6,7 +6,9 @@ machines = {
   "compliance" => {"memory" => "1024", "cpu" => "2", "ip" => "20", "image" => "ubuntu/bionic64"},
   "container"  => {"memory" => "1536", "cpu" => "1", "ip" => "30", "image" => "centos/7"},
   "scm"        => {"memory" => "256",  "cpu" => "1", "ip" => "40", "image" => "debian/buster64"},
-  "log"        => {"memory" => "2048", "cpu" => "1", "ip" => "50", "image" => "ubuntu/bionic64"}
+  "log"        => {"memory" => "2048", "cpu" => "1", "ip" => "50", "image" => "ubuntu/bionic64"},
+  "testing"    => {"memory" => "1024", "cpu" => "1", "ip" => "60", "image" => "centos/6"},
+
 }
 
 Vagrant.configure("2") do |config|
